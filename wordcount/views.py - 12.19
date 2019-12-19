@@ -1,0 +1,13 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def home(request):
+    #return HttpResponse('<h1>testing Django</h1>')
+    return render(request, 'home.html')
+
+def dagr(request):
+    #return HttpResponse('<h1>testing Django</h1>')
+    return render(request, 'dagr.html', {'T1':'testing python code'})
+
+def count(request):
+    return render(request, 'count.html')
